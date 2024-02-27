@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(21, 20, 20);
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar ul li a:hover {
+    color: blueviolet;
+}
+
+.text-box {
+    height: 80vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    margin: 10px 40px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: blueviolet;
+}
+
+.Register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Register > h1 {
+    text-align: center;
+    padding: 2rem 0 0;
+}
+
+.Register-box {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid blue;
+    border-radius: 10px;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 15rem;
+    height: 2rem;
+    background-color: white;
+}
+
+input[type="submit"] {
+    width: 10rem;
+    height: 2rem;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.Register > p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icons a img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.mgn-top {
+    margin-top: 10px;
+}
+
+.about-content img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 20px;
+}
+
+.trojans-content-1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 80vw;
+}
+
+.trojans-content-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80vw;
+}
+
+.text-color-white {
+    color: white;
+}
+
+.events-container img {
+    height: 20rem;
+    width: 18rem;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.events-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tech-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* New styles for hover effect */
+.events-container .event-container-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.events-container .event-container-item:hover .event-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+}

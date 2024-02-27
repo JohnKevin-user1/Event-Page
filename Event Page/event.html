@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container-event{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .table-border{
+            border: 1px solid white;
+            border-radius: 20px;
+            width: 20rem;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .button{
+            border: 2px solid white;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 0.5rem;
+            background-color: greenyellow;
+            color: white;
+        }
+        .img{
+            width: 20rem;
+            height: 15rem;
+            border-radius: 20px;
+            
+        }
+        .event-details{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .event-align{
+            border: 1px solid white;
+            border-radius: 20px;
+            width: 20rem;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .text-alignment{
+            text-align: center;
+        }
+        .my-container{
+            background-color: black;
+        }
+        .text-color-white{
+            color: white;
+        }
+        .container-about{
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="my-container">
+        <div class="container-about">
+            <h2 class="text-alignment text-color-white">About College</h2>
+            <img src="/images/clg.jpeg" alt="" class="img">
+            <p class="text-alignment text-color-white"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos, aliquam molestiae dolore magnam accusamus hic ullam ipsam quasi ducimus excepturi nisi! Sequi aliquid facere doloribus neque reprehenderit, omnis impedit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas fuga non quis fugit odio, possimus, nihil dolore excepturi asperiores ex, esse aspernatur et nam eveniet similique impedit. Vero, quos at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente provident vel doloribus, labore ab ipsam ipsa nobis rem similique sint aliquam soluta sunt eaque repellendus est? Alias, blanditiis ratione.</p>
+            <h2 class="text-alignment text-color-white">About Event</h2>
+            <img src="/images/techimg2.jpg" alt="" class="img">
+            <p class="text-alignment text-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur exercitationem ab nesciunt voluptatibus sint ducimus repellendus, corporis quasi beatae adipisci incidunt aliquam cupiditate suscipit et error minus. Recusandae, porro Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minima eveniet alias sunt numquam ipsum quibusdam non iure eligendi deleniti velit temporibus tenetur impedit excepturi ut fugiat, iste, et esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel corrupti, unde eveniet minima deleniti aperiam blanditiis cum iste a, autem ipsum consequuntur officia, optio eum placeat aspernatur sit dolorem!</p>
+
+        </div>
+        <div class="container-event">
+                <div class="pass-1 table-border">
+                    <h2 class="text-color-white"> Basic Pass</h2>
+                    <p class="text-alignment text-color-white"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, alias vel a dignissimos rem consectetur sint blanditiis fuga asperiores quisquam ratione commodi fugiat assumenda repellat, offi</p>
+                    <h2 class="text-color-white">Rs:199</h2>
+                    <input type="button" value="Register" class="button">
+                </div>
+                <div class="pass-2 table-border">
+
+                    <h2 class="text-color-white"> Special-Pass</h2>
+                    <p class="text-alignment text-color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis saepe, vitae, sequi ab ipsa, eaque exercitationem fugit nihil minus illo beatae doloribus atque est inventore quos dolor quis esse fugiat.</p>
+                    <h2 class="text-color-white">Rs:299</h2>
+                    <input type="button" value="Register" class="button">
+                </div>
+                <div class="pass-3 table-border">
+                    <h2 class="text-color-white"> All-Access-Pass</h2>
+                    <p class="text-alignment text-color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis saepe, vitae, sequi ab ipsa, eaque exercitationem fugit nihil minus illo beatae doloribus atque est inventore quos dolor quis esse fugiat.</p>
+                    <h2 class="text-color-white">Rs:499</h2>
+                    <input type="button" value="Register" class="button">
+                </div>
+        </div>
+        <div class="event-details">
+            <h1 class="text-color-white">Technical Events</h1>
+            <div class="event-1 event-align">
+                <img src="/images/techimg1.jpg" alt="Paper presentation" class="img">
+                <p class="text-alignment text-color-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam officiis consequatur exercitationem aspernatur. Deserunt sunt minus corrupti explicabo veniam aperiam reiciendis! Assumenda tempore dolore repudiandae</p>
+            </div>
+            <div class="event-2 event-align">
+                <img src="/images/techimg2.jpg" alt="Paper presentation" class="img">
+                <p class="text-alignment text-color-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam officiis consequatur exercitationem aspernatur. Deserunt sunt minus corrupti explicabo veniam aperiam reiciendis! Assumenda tempore dolore repudiandae</p>
+            </div>
+            <div class="event-3 event-align">
+                <img src="/images/pro-presentation.jpg" alt="Paper presentation" class="img">
+                <p class="text-alignment text-color-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam officiis consequatur exercitationem aspernatur. Deserunt sunt minus corrupti explicabo veniam aperiam reiciendis! Assumenda tempore dolore repudiandae</p>
+            </div>
+            <h1 class="text-color-white">Non Technical Events</h1>
+            <div class="event-4 event-align">
+                <img src="/images/Nontechimg1.jpg" alt="Box Cricket" class="img">
+                <p class="text-alignment text-color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nemo porro et, laudantium debitis recusandae nulla magni ab iure, aliquid ex voluptates a itaque, laboriosam enim iste possimus neque? Qui.</p>
+            </div> 
+            <div class="event-5 event-align">
+                <img src="/images/Nontechimg2.webp" alt="Box Cricket" class="img">
+                <p class="text-alignment text-color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nemo porro et, laudantium debitis recusandae nulla magni ab iure, aliquid ex voluptates a itaque, laboriosam enim iste possimus neque? Qui.</p>
+            </div> 
+            <h1 class="text-color-white">Workshop</h1>
+            <div class="event-6 event-align">
+                <img src="/images/Nontechimg2.webp" alt="" class="img">
+                <p class="text-alignment text-color-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eum facilis a, ipsa fugit iste nobis, assumenda porro numquam magni impedit ducimus recusandae? Quis reiciendis eum iusto perspiciatis.</p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
